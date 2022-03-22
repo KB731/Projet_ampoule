@@ -1,3 +1,10 @@
+<?php 
+include_once('./crud/read.php');
+$id = $_GET['id'];
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -145,11 +152,12 @@
       <section class="mb-4">
         <div class="card">
           <div class="card-header py-3">
-            <h5 class="mb-0 text-center"><strong>Ajouter/Modifier une ampoule</strong></h5>
+            <h5 class="mb-0 text-center"><strong>Modifier une ampoule</strong></h5>
           </div>
         </div>
 
-        <form action="crud/create.php" method="POST" class="form-ampoule">
+        <form action="crud/update.php?id=<?php echo $id ?>" method="POST" class="form-ampoule">
+
           <div>
             <label for="date">Date</label>
             <input type="date" class="form-control" id="date" name="date">
@@ -187,7 +195,6 @@
         
         </form>
       </section>
-
       
       <!-- Section: Main chart -->
   </main>
