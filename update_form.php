@@ -37,7 +37,7 @@ $id = $_GET['id'];
     <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
       <div class="position-sticky">
         <div class="list-group list-group-flush mx-3 mt-4">
-          <a href="index.php" class="list-group-item list-group-item-action py-2 ripple active">
+          <a href="dashboard.php" class="list-group-item list-group-item-action py-2 ripple active">
             <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Ajouter/Modifier</span>
           </a>
           <a href="historique.php" class="list-group-item list-group-item-action py-2 ripple active">
@@ -60,15 +60,8 @@ $id = $_GET['id'];
 
         <!-- Brand -->
         <a class="navbar-brand" href="index.php">
-          <img src="img/2027372.svg" height="25" alt="logo_ampoule" loading="lazy" />
+          <img src="img/2027372.svg" height="50" alt="logo_ampoule" loading="lazy" />
         </a>
-        
-        <!-- Search form -->
-        <form class="d-none d-md-flex input-group w-auto my-auto">
-          <input autocomplete="off" type="search" class="form-control rounded"
-            placeholder='Search (ctrl + "/" to focus)' style="min-width: 225px" />
-          <span class="input-group-text border-0"><i class="fas fa-search"></i></span>
-        </form>
 
         <!-- Right links -->
         <ul class="navbar-nav ms-auto d-flex flex-row">
@@ -88,16 +81,14 @@ $id = $_GET['id'];
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <li>
-                <a class="dropdown-item" href="#"><i class="france flag"></i>Français</a>
-                <i class="fa fa-check text-success ms-2"></i></a>
+                <a class="dropdown-item" href="#"><i class="fa fa-check text-success ms-2"></i> <i class="france flag"></i>Français</a> 
               </li>
               <li>
                 <hr class="dropdown-divider" />
               </li>
               <li>
-                <a class="dropdown-item" href="#"><i class="united kingdom flag"></i>English
+                <a class="dropdown-item" href="#"><i class="united kingdom flag"></i>English</a>
               </li>
-              
               <li>
                 <a class="dropdown-item" href="#"><i class="poland flag"></i>Polski</a>
               </li>
@@ -110,7 +101,6 @@ $id = $_GET['id'];
               <li>
                 <a class="dropdown-item" href="#"><i class="germany flag"></i>Deutsch</a>
               </li>
-             
               <li>
                 <a class="dropdown-item" href="#"><i class="spain flag"></i>Español</a>
               </li>
@@ -127,13 +117,10 @@ $id = $_GET['id'];
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle hidden-arrow d-flex align-items-center" href="#"
               id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-              <img src="https://mdbootstrap.com/img/Photos/Avatars/img (31).jpg" class="rounded-circle" height="22"
-                alt="" loading="lazy" />
+              <i class="fas fa-user-alt"></i>
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">My profile</a></li>
-              <li><a class="dropdown-item" href="#">Settings</a></li>
-              <li><a class="dropdown-item" href="#">Logout</a></li>
+              <li><a class="dropdown-item" href="logout.php">Logout</a></li>
             </ul>
           </li>
         </ul>
@@ -187,7 +174,7 @@ $id = $_GET['id'];
 
           <label for="prix">Prix</label>
           <div class="form-outline">
-              <input type="number" id="typeNumber" class="form-control" name="prix" value="<?php echo ?>"/>
+              <input type="number" id="typeNumber" class="form-control" name="prix"/>
               <label class="form-label" for="typeNumber">Prix</label>
           </div>
 
