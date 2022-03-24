@@ -11,4 +11,4 @@ $create_table = "CREATE TABLE IF NOT EXISTS `ampoule`(
     )";
 
 $connectDB->exec($create_table);
-echo 'Tables created !';
+echo 'Table created !';
