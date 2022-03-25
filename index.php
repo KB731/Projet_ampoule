@@ -29,7 +29,12 @@ if (isset($submit)) {
         }
 
         body {
-            margin: 20px;
+            margin: 10%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #f0c300;
         }
 
         input {
@@ -38,6 +43,12 @@ if (isset($submit)) {
             padding: 16px;
             outline: none;
             border-radius: 6px;
+            margin: 5%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
         }
 
         .erreur {
@@ -45,9 +56,13 @@ if (isset($submit)) {
             margin-bottom: 10px;
         }
 
+        h1 {
+            margin-bottom: 5%;
+        }
+
         a {
             font-size: 12pt;
-            color: #EE6600;
+            color: #000000;
             text-decoration: none;
             font-weight: normal;
         }
